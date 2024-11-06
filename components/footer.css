@@ -1,0 +1,22 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  left: 20px;
+  background-color: var(--color-electric-blue);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  border-radius: 8px;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer img:hover {
+  background-color: var(--color-blue);
+}

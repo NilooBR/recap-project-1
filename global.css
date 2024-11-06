@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-cherry-pink: #fbacbe;
+  --color-light-orange: #f1d6b8;
+  --color-celadon: #b9d2b1;
+  --color-aquamarine: #68edc6;
+  --color-lavender: #e5e1ee;
+  --color-electric-blue: #90f0ff;
+  --color-dark-gray: #333333;
+  --color-light-gray: #ebebeb;
+  --color-blue: #49c8db;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-light-gray);
+  padding: 20px;
+  color: var(--color-dark-gray);
+}

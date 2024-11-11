@@ -16,11 +16,19 @@
   --color-blue: #49c8db;
   --color-purple: #bbb0d2;
   --color-light-purple: #f3f1f7;
+
+  --primary: var(--color-cherry-pink);
+  --secondary: var(--color-electric-blue);
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--color-light-gray);
+  background-color: var(--primary);
   padding: 20px;
   color: var(--color-dark-gray);
+}
+
+body.dark{
+  --primary: var(--color-light-orange);
+  --secondary: var(--color-light-orange);
 }

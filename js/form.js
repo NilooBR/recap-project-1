@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const questionCounter = document.createElement("div");
   questionCounter.classList.add("characters")
   questionCounter.setAttribute("id", "question-counter");
-  questionCounter.textContent = "150 characters remaining";
+  questionCounter.textContent = "0/150";
 
   // "Answer"
   const answerLabel = document.createElement("label");
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const answerCounter = document.createElement("div");
   answerCounter.classList.add("characters")
   answerCounter.setAttribute("id", "answer-counter");
-  answerCounter.textContent = "150 characters remaining";
+  answerCounter.textContent = "0/150";
 
   // "Tag"
   const tagLabel = document.createElement("label");

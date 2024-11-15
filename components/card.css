@@ -26,15 +26,13 @@
   z-index: 1;
 }
 
-.bookmark-icon img {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.bookmark-icon svg:hover {
+/* .bookmark-icon svg:hover {
   fill: var(--secondary-light);
   stroke: var(--secondary-light);
+} */
+
+.card__bookmark--selected {
+  fill: var(--black);
 }
 
 .card__question {

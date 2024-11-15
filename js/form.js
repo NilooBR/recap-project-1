@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
   card.appendChild(cardTags);
 
   // Handle form submission
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const question = questionTextarea.value;
@@ -123,11 +123,11 @@ document.addEventListener("DOMContentLoaded", function () {
     counter.textContent = `${remainingChars} characters left`;
   }
 
-  questionTextarea.addEventListener("input", function () {
+  questionTextarea.addEventListener("input", () => {
     updateCharCount(questionTextarea, questionCounter, 150);
   });
 
-  answerTextarea.addEventListener("input", function () {
+  answerTextarea.addEventListener("input", () => {
     updateCharCount(answerTextarea, answerCounter, 150);
   });
 

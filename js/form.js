@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // "Question"
   const questionLabel = document.createElement("label");
   questionLabel.textContent = "Question";
+  questionLabel.setAttribute("id", "label");
   questionLabel.setAttribute("for", "question");
 
   const questionTextarea = document.createElement("textarea");
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // "Answer"
   const answerLabel = document.createElement("label");
   answerLabel.textContent = "Answer";
+  answerLabel.setAttribute("id", "label");
   answerLabel.setAttribute("for", "answer");
 
   const answerTextarea = document.createElement("textarea");
@@ -22,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //"Tag"
   const tagLabel = document.createElement("label");
   tagLabel.textContent = "Tag";
+  tagLabel.setAttribute("id", "label");
   tagLabel.setAttribute("for", "tag");
 
   const tagInput = document.createElement("input");
@@ -32,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Submit button
   const createButton = document.createElement("button");
   createButton.textContent = "Create";
+  createButton.setAttribute("id", "submit");
   createButton.setAttribute("type", "submit");
 
   // Append to the form

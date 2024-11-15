@@ -1,6 +1,6 @@
 /* Form Container */
 
-form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -20,7 +20,7 @@ form {
   gap: 15px;
 }
 
-label {
+#label {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 5px;
@@ -28,8 +28,25 @@ label {
   color: var(--black);
 }
 
-textarea,
-input[type="text"] {
+#answer{
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+#question{
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+#tag{
   width: 100%;
   padding: 10px;
   font-size: 1rem;
@@ -39,7 +56,7 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-button[type="submit"] {
+#submit {
   width: 100%;
   padding: 12px;
   background: var(--secondary);

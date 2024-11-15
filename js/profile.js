@@ -1,4 +1,4 @@
-document.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const darkModeToggle = document.querySelector('[data-js="darkmode-input"]');
   const body = document.querySelector('[data-js="body"]');
 

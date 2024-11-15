@@ -12,22 +12,34 @@
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var( --color-blue);
+  border: 3px solid var(--black);
   margin-right: 15px;
 }
 
 .profile-info h2 {
   font-size: 1.5rem;
   margin: 0;
-  color: var(--color-dark-gray);
+  color: var(--black);
 }
 
 .profile-info p {
   font-size: 1rem;
-  color: var(--color-dark-gray);
+  color: var(--black);
 }
 
 body.dark-mode {
   background-color: var(--black);
+  color: var(--white);
+}
+
+body.dark-mode .profile-image {
+  border-color: var(--white);
+}
+
+body.dark-mode .profile-info h2 {
+  color: var(--white);
+}
+
+body.dark-mode .profile-info p {
   color: var(--white);
 }

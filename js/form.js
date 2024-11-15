@@ -10,6 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const questionTextarea = document.createElement("textarea");
   questionTextarea.setAttribute("id", "question");
   questionTextarea.setAttribute("name", "question");
+  questionTextarea.setAttribute("maxlength", "150");
+
+  const questionCounter = document.createElement("div");
+  questionCounter.classList.add("characters")
+  questionCounter.setAttribute("id", "question-counter");
+  questionCounter.textContent = "150 characters remaining";
 
   // "Answer"
   const answerLabel = document.createElement("label");
@@ -20,6 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const answerTextarea = document.createElement("textarea");
   answerTextarea.setAttribute("id", "answer");
   answerTextarea.setAttribute("name", "answer");
+  answerTextarea.setAttribute("maxlength", "150");
+
+  const answerCounter = document.createElement("div");
+  answerCounter.classList.add("characters")
+  answerCounter.setAttribute("id", "answer-counter");
+  answerCounter.textContent = "150 characters remaining";
 
   // "Tag"
   const tagLabel = document.createElement("label");
@@ -41,8 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Append to the form
   form.appendChild(questionLabel);
   form.appendChild(questionTextarea);
+  form.appendChild(questionCounter);
   form.appendChild(answerLabel);
   form.appendChild(answerTextarea);
+  form.appendChild(answerCounter);
   form.appendChild(tagLabel);
   form.appendChild(tagInput);
   form.appendChild(createButton);
@@ -102,4 +116,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show the card in the container
     formContainer.appendChild(card);
   });
+
+  // Update character count
+  function updateCharCount(textarea, counter, maxLength) {
+    const remainingChars = maxLength - textarea.value.length;
+    counter.textContent = `${remainingChars} characters left`;
+  }
+
+  questionTextarea.addEventListener("input", function () {
+    updateCharCount(questionTextarea, questionCounter, 150);
+  });
+
+  answerTextarea.addEventListener("input", function () {
+    updateCharCount(answerTextarea, answerCounter, 150);
+  });
+
+
 });

@@ -1,24 +1,19 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 :root {
-  --color-cherry-pink: #fbacbe;
-  --color-light-orange: #f1d6b8;
-  --color-celadon: #b9d2b1;
-  --color-aquamarine: #68edc6;
-  --color-lavender: #e5e1ee;
-  --color-electric-blue: #90f0ff;
-  --color-dark-gray: #333333;
-  --color-light-gray: #ebebeb;
-  --color-blue: #49c8db;
-  --color-purple: #bbb0d2;
-  --color-light-purple: #f3f1f7;
-
-  --primary: var(--color-cherry-pink);
-  --secondary: var(--color-electric-blue);
+  --primary: #ffffff;
+  --secondary: #ff4a11;
+  --secondary-light: #fddcd2;
+  --white: #ffffff;
+  --black: #252629;
+  --background: var(--white);
+  --foreground: var(--black);
+  --ff-primary: sans-serif;
+  --ff-serif: serif;
+  --fs-200: 0.6rem;
+  --fs-300: 0.8rem;
+  --fs-400: 1rem;
+  --fs-500: 1.1rem;
+  --fs-600: 1.5rem;
+  --fs-900: 1.75rem;
 }
 
 body {
@@ -31,4 +26,37 @@ body {
 body.dark{
   --primary: var(--color-light-orange);
   --secondary: var(--color-light-orange);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li,
+ol li {
+  list-style: none;
+  padding: 0;
 }

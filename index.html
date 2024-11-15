@@ -8,7 +8,9 @@
     <script src="./index.js" defer></script>
   </head>
   <body data-js="body">
-    <nav class="navigation">⏳ Quiz App ⌛️</nav>
+    <header class="header">
+      <h1 class="header__title">Quiz-App</h1>
+    </header>
     <main class="main-content">
       <article class="card" id="question1">
         <div class="bookmark-container">
@@ -18,8 +20,8 @@
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              fill="#FFFFFF"
-              stroke="var(--color-electric-blue)"
+              fill="var(--secondary)"
+              stroke="var(--black)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -46,8 +48,8 @@
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              fill="#FFFFFF"
-              stroke="var(--color-electric-blue)"
+              fill="var(--secondary)"
+              stroke="var(--black)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -76,8 +78,8 @@
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              fill="#FFFFFF"
-              stroke="var(--color-electric-blue)"
+              fill="var(--secondary)"
+              stroke="var(--black)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -106,8 +108,8 @@
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              fill="#FFFFFF"
-              stroke="var(--color-electric-blue)"
+              fill="var(--secondary)"
+              stroke="var(--black)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -134,8 +136,8 @@
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              fill="#FFFFFF"
-              stroke="var(--color-electric-blue)"
+              fill="var(--secondary)"
+              stroke="var(--black)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -162,8 +164,8 @@
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              fill="#FFFFFF"
-              stroke="var(--color-electric-blue)"
+              fill="var(--secondary)"
+              stroke="var(--black)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -192,8 +194,8 @@
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              fill="#FFFFFF"
-              stroke="var(--color-electric-blue)"
+              fill="var(--secondary)"
+              stroke="var(--black)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -221,8 +223,8 @@
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              fill="#FFFFFF"
-              stroke="var(--color-electric-blue)"
+              fill="var(--secondary)"
+              stroke="var(--black)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -249,8 +251,8 @@
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              fill="#FFFFFF"
-              stroke="var(--color-electric-blue)"
+              fill="var(--secondary)"
+              stroke="var(--black)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -278,8 +280,8 @@
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              fill="#FFFFFF"
-              stroke="var(--color-electric-blue)"
+              fill="var(--secondary)"
+              stroke="var(--black)"
               stroke-width="1.8"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -303,24 +305,86 @@
       </article>
     </main>
 
-    <footer class="footer">
-      <a href="./index.html">
-        <img
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3OTc5NzkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ob3VzZSI+PHBhdGggZD0iTTE1IDIxdi04YTEgMSAwIDAgMC0xLTFoLTRhMSAxIDAgMCAwLTEgMXY4Ii8+PHBhdGggZD0iTTMgMTBhMiAyIDAgMCAxIC43MDktMS41MjhsNy01Ljk5OWEyIDIgMCAwIDEgMi41ODIgMGw3IDUuOTk5QTIgMiAwIDAgMSAyMSAxMHY5YTIgMiAwIDAgMS0yIDJINWEyIDIgMCAwIDEtMi0yeiIvPjwvc3ZnPg=="
-          alt="home" />
-      </a>
-
-      <a href="./bookmarks.html">
-        <img
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZWZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ib29rbWFyayI+PHBhdGggZD0ibTE5IDIxLTctNC03IDRWNWEyIDIgMCAwIDEgMi0yaDEwYTIgMiAwIDAgMSAyIDJ2MTZ6Ii8+PC9zdmc+"
-          alt="bookmarks" />
-      </a>
-
-      <a href="./profile.html">
-        <img
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZWZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS11c2VyIj48cGF0aCBkPSJNMTkgMjF2LTJhNCA0IDAgMCAwLTQtNEg5YTQgNCAwIDAgMC00IDR2MiIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iNyIgcj0iNCIvPjwvc3ZnPg=="
-          alt="profile" />
-      </a>
-    </footer>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="index.html"
+            aria-label="go to home page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewbox="0 0 24 24"
+              width="24px"
+            >
+              <path
+                d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="bookmarks.html"
+            aria-label="go to bookmarks page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewbox="0 0 24 24"
+              width="24px"
+            >
+              <path
+                d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="form.html"
+            aria-label="go to bookmarks page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 5l0 14" />
+              <path d="M5 12l14 0" />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation__list-item navigation__list-item--active">
+          <a
+            class="navigation__link"
+            href="profile.html"
+            aria-label="go to profile page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewbox="0 0 24 24"
+              width="24px"
+            >
+              <path
+                d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 9c2.7 0 5.8 1.29 6 2v1H6v-.99c.2-.72 3.3-2.01 6-2.01m0-11C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>

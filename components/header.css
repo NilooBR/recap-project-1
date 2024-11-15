@@ -1,16 +1,15 @@
 /* Header Section */
-
-nav.navigation {
-  background-color: var(--color-electric-blue);
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--color-dark-gray);
+.header {
   position: fixed;
+  z-index: 20;
   top: 0;
-  right: 20px;
-  left: 20px;
-  z-index: 10;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background: var(--background);
+  border-bottom: 1px solid var(--foreground);
+}
+
+.header__title {
+  text-align: center;
 }

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   questionTextarea.setAttribute("maxlength", "150");
 
   const questionCounter = document.createElement("div");
-  questionCounter.classList.add("characters")
+  questionCounter.classList.add("characters");
   questionCounter.setAttribute("id", "question-counter");
   questionCounter.textContent = "0/150";
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   answerTextarea.setAttribute("maxlength", "150");
 
   const answerCounter = document.createElement("div");
-  answerCounter.classList.add("characters")
+  answerCounter.classList.add("characters");
   answerCounter.setAttribute("id", "answer-counter");
   answerCounter.textContent = "0/150";
 
@@ -85,9 +85,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const showAnswer = document.createElement("button");
   showAnswer.classList.add("card__button");
   showAnswer.textContent = "Show Answer";
+  showAnswer.setAttribute("data-js", "card__button");
 
   const cardAnswer = document.createElement("div");
   cardAnswer.classList.add("card__answer");
+  cardAnswer.setAttribute("hidden", "true");
+  cardAnswer.setAttribute("data-js", "card__answer");
 
   const cardTags = document.createElement("div");
   cardTags.classList.add("card__tags");

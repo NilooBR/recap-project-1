@@ -13,3 +13,12 @@
 .header__title {
   text-align: center;
 }
+
+body.dark-mode .header__title {
+  color: var(--white);
+}
+
+body.dark-mode .header {
+  background: var(--black);
+  border-color: var(--white);
+}

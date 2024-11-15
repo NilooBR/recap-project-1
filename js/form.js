@@ -58,8 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
   iconContainer.classList.add("bookmark-container");
   const hyperlink = document.createElement("a");
   hyperlink.classList.add("bookmark-icon");
-  const icon = document.createElement("svg");
-  hyperlink.appendChild(icon);
+  hyperlink.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="var(--secondary)" stroke="var(--black)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bookmark">
+      <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+    </svg>
+  `;
   iconContainer.appendChild(hyperlink);
 
   const cardQuestion = document.createElement("h2");

@@ -116,6 +116,16 @@ document.addEventListener("DOMContentLoaded", function () {
     cardAnswer.textContent = answer;
     tagsText.textContent = tags;
 
+    showAnswer.addEventListener("click", () => {
+      if (cardAnswer.style.display === "block") {
+        cardAnswer.style.display = "none";
+        showAnswer.textContent = "Show Answer";
+      } else {
+        cardAnswer.style.display = "block";
+        showAnswer.textContent = "Hide Answer";
+      }
+    });
+
     // Show the card in the container
     formContainer.appendChild(card);
   });
@@ -133,6 +143,4 @@ document.addEventListener("DOMContentLoaded", function () {
   answerTextarea.addEventListener("input", () => {
     updateCharCount(answerTextarea, answerCounter, 150);
   });
-
-
 });

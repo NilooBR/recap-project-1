@@ -3,7 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const answer = document.querySelector('[data-js="card__answer"]');
 
   button.addEventListener("click", () => {
-    answer.hidden = !answer.hidden;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      button.textContent = "Show Answer";
+    } else {
+      answer.style.display = "block";
+      button.textContent = "Hide Answer";
+    }
   });
 
   const bookmark = document.querySelector('[data-js="card__bookmark"]');

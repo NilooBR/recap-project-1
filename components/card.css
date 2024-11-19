@@ -12,7 +12,7 @@
 
 .card {
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   padding: 15px;
   border-radius: 15px;
   border: 1px solid var(--black);
@@ -57,6 +57,7 @@
 
 .card__button:hover {
   background-color: var(--secondary-light);
+  color: var(--black);
 }
 
 .card__answer {

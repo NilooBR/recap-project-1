@@ -68,6 +68,11 @@
   cursor: pointer;
 }
 
+#submit:hover {
+  background-color: var(--secondary-light);
+  color: var(--black);
+}
+
 .characters{
   display: flex;
   flex-direction: row-reverse;
